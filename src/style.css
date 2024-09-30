@@ -1,0 +1,23 @@
+/* ReactStrap Overrides */
+
+.container-fluid{
+    --bs-gutter-x: 5rem;
+    --bs-gutter-y: 0;
+    max-width: 1200px;
+}
+
+.navbar-collapse{
+    flex-grow: unset;
+}
+
+
+
+/* Styles */
+
+.darshan-container{
+    height: 100vh;
+    background-image: url('./assets/img/hero_image.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
