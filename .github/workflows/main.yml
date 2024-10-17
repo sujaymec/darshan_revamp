@@ -27,7 +27,7 @@ jobs:
           port: ${{ secrets.HOSTINGER_PORT }}
           script: |
             # Navigate to the public_html directory
-            cd ~/public_html
+            cd ~/domains/staging.darshantrust.co.in/public_html
 
             # Remove existing files
             rm -rf *
@@ -36,4 +36,4 @@ jobs:
             upload ./build
 
             # Change permissions
-            chmod -R 755 ~/public_html
+            chmod -R 755 ~/domains/staging.darshantrust.co.in/public_html
