@@ -9,23 +9,59 @@
 .navbar-collapse{
     flex-grow: unset;
 }
+.btn-info{
+    background: #8d9aff;
+    border: 1px solid #454fa1;
+}
 
 
 /* Common Classes */
 
 h1{
     text-align: center;
-    font-size: 36px;
-    font-size: 2rem;
+    color: #534032;
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin-top: 15vh;
+}
+h3{
+    margin: 0;
+    color: #534032;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.hero-section img{
+    width: 50px;
+    display: block;
+    
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 331px;
+    margin: auto;
+    /* background-color: #fff1d9;
+    background-color: #c5a264; */
+    padding: 5px 15px;
+    border-radius: 15px;
 }
 
+.hero-buttons{
+    width: 220px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 5vh;
+}
 
 /* Styles */
 
 .darshan-container{
     height: 100vh;
-    background-image: url('./assets/img/dt_background.svg');
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('./assets/img/dt_artists.svg'), url('./assets/img/dt_sun.svg'), url('./assets/img/dt_background.svg');
+    background-position: center bottom, center bottom, center bottom;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 300px, 50%, cover;
 }
