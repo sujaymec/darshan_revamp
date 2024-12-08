@@ -1,8 +1,7 @@
 // import logo from './logo.svg';
 import React from 'react';
-import NavBar from './components/Navbar';
-import HeroSection from './components/Hero_section';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Homepage from './components/pages/Homepage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import './style.css';
@@ -10,11 +9,11 @@ import './style.css';
 function App(args) {
 
   return (
-    <div className='darshan-container'>
-      <NavBar />
-      <HeroSection />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Homepage />} />
+      </Routes>
+    </Router>
   );
 }
 

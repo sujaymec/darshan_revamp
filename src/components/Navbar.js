@@ -7,10 +7,10 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
+  // UncontrolledDropdown,
+  // DropdownToggle,
+  // DropdownMenu,
+  // DropdownItem,
   // NavbarText,
 } from 'reactstrap';
 
@@ -32,7 +32,7 @@ function NavBar(args) {
                 Downloads
               </NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
+            {/* <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                 Disciplines
               </DropdownToggle>
@@ -42,7 +42,7 @@ function NavBar(args) {
                 <DropdownItem divider />
                 <DropdownItem>VadyaPurna</DropdownItem>
               </DropdownMenu>
-            </UncontrolledDropdown>
+            </UncontrolledDropdown> */}
           </Nav>
           {/* <NavbarText>Simple Text</NavbarText> */}
         </Collapse>

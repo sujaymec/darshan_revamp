@@ -10,8 +10,8 @@
     flex-grow: unset;
 }
 .btn-info{
-    background: #8d9aff;
-    border: 1px solid #454fa1;
+    background: #FDB13E;
+    border: 1px solid #a77f61;
 }
 
 
@@ -20,20 +20,22 @@
 h1{
     text-align: center;
     color: #534032;
-    font-size: 6rem;
+    font-size: 5rem;
     text-transform: uppercase;
-    margin-top: 15vh;
+    margin-top: 10vh;
+    letter-spacing: 20px;
 }
 h3{
     margin: 0;
     color: #534032;
     font-size: 16px;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 .hero-section img{
     width: 50px;
     display: block;
+    opacity: 0.7;
     
 }
 .hero-text{
@@ -52,15 +54,22 @@ h3{
     width: 220px;
     display: flex;
     margin: auto;
-    justify-content: space-between;
-    margin-top: 5vh;
+    justify-content: center;
+    margin-top: 10vh;
 }
+.btn-downloads{
+    display: flex;
+}
+.btn-downloads i{
+    margin-left: 5px;
+}
+
 
 /* Styles */
 
 .darshan-container{
     height: 100vh;
-    background-image: url('./assets/img/dt_artists.svg'), url('./assets/img/dt_sun.svg'), url('./assets/img/dt_background.svg');
+    background-image: url('./assets/img/dt_artists_vector.svg'), url('./assets/img/dt_sun.svg'), url('./assets/img/dt_background.svg');
     background-position: center bottom, center bottom, center bottom;
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 300px, 50%, cover;
