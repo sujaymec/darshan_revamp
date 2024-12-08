@@ -1,6 +1,7 @@
 import {React, useState}from "react";
 import { Button } from "reactstrap";
 import bsslogo from '../assets/img/layer1.svg'
+import { Link } from "react-router-dom";
 
 
 function HeroSection () {
@@ -11,17 +12,18 @@ function HeroSection () {
             <h1>&nbsp;Darshan</h1>
             <div className="hero-text">
                 <h3>
-                    {/* <span>Educational and Charitable Organization</span><br /> */}
+                    <img src={bsslogo} alt="sth" className="bss-logo" />
                     Master Franchisee BSS Cultural Mission National Development Agency
                 </h3>
-                <img src={bsslogo} alt="sth" className="bss-logo" />
+                
             </div>
             <div className="hero-buttons">
-                <Button color="info" className="btn-downloads" onClick={() => setCount(count+1)}>
-                    Downloads
-                    <i className="material-icons">download</i>
-                </Button>
-                {/* <Button color="danger">Brochure</Button> */}
+                <Link to="/about">
+                    <Button color="info" className="btn-downloads" onClick={() => setCount(count+1)}>
+                        Downloads
+                        <i className="material-icons">download</i>
+                    </Button>
+                </Link>
             </div>
         </div>
     )

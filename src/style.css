@@ -1,5 +1,6 @@
 /* ReactStrap Overrides */
 
+a{text-decoration: none;}
 .container-fluid{
     --bs-gutter-x: 5rem;
     --bs-gutter-y: 0;
@@ -11,7 +12,8 @@
 }
 .btn-info{
     background: #FDB13E;
-    border: 1px solid #a77f61;
+    border: 1px solid #bb9273;
+    color: #7d5f49;
 }
 
 
@@ -20,7 +22,7 @@
 h1{
     text-align: center;
     color: #534032;
-    font-size: 5rem;
+    font-size: 10rem;
     text-transform: uppercase;
     margin-top: 10vh;
     letter-spacing: 20px;
@@ -30,7 +32,7 @@ h3{
     color: #534032;
     font-size: 16px;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .hero-section img{
     width: 50px;
@@ -55,7 +57,7 @@ h3{
     display: flex;
     margin: auto;
     justify-content: center;
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 .btn-downloads{
     display: flex;
