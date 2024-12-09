@@ -1,4 +1,4 @@
-name: Deploy to Hostinger
+name: Deploy to Staging Subdomain
 
 on:
   push:
@@ -10,30 +10,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build CRA app
+      - name: Build project
         run: npm run build
 
-      - name: SSH deployment
-        uses: appleboy/ssh-action@master
+      - name: Deploy to Staging Subdomain
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          host: ${{ secrets.HOSTINGER_HOST }}
-          username: ${{ secrets.HOSTINGER_USERNAME }}
+          server: 193.203.185.160
+          username: u764122208.staging.darshantrust.co.in
           password: ${{ secrets.HOSTINGER_PASSWORD }}
-          port: ${{ secrets.HOSTINGER_PORT }}
-          script: |
-            # Navigate to the public_html directory
-            cd /public_html/
-
-            # Remove existing files
-            rm -rf *
-
-            # Upload built CRA app
-            upload ./build
-
-            # Change permissions
-            chmod -R 755 /public_html/
+          local-dir: ./build
+          server-dir: /public_html/
