@@ -11,11 +11,8 @@ function HeroSection () {
         <div className="hero-section">
             <h1>&nbsp;Darshan</h1>
             <div className="hero-text">
-                <h3>
-                    <img src={bsslogo} alt="sth" className="bss-logo" />
-                    Master Franchisee BSS Cultural Mission National Development Agency
-                </h3>
-                
+                <img src={bsslogo} alt="sth" className="bss-logo" />
+                <h3> Master Franchisee BSS Cultural Mission National Development Agency</h3>
             </div>
             <div className="hero-buttons">
                 <Link to="/about">

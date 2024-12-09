@@ -13,6 +13,7 @@ import {
   // DropdownItem,
   // NavbarText,
 } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 function NavBar(args) {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,9 +29,9 @@ function NavBar(args) {
               <NavLink href="/components/">About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://darshantrustcoin.wordpress.com/resources">
+              <Link to="/about"><NavLink>
                 Downloads
-              </NavLink>
+              </NavLink></Link>
             </NavItem>
             {/* <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
